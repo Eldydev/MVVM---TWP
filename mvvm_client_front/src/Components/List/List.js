@@ -9,6 +9,18 @@ class List extends Component {
     }
     componentDidMount() {
     }
+    Mapping(){
+        <div className="" >
+        {data.map((event, i) => {
+            return (
+                <div className='' key={i}>
+                    <p>date : {event.date}</p>
+                    <p>commentaire : {event.label}</p>
+                </div>
+            )
+        })}
+    </div>
+    }
     render() {
         <div>List</div>
     }
